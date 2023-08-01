@@ -1,3 +1,4 @@
+#To create Fibonacci series using python3
 n = 10
 num1 = 0
 num2 = 1
