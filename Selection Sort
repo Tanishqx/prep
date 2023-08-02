@@ -1,0 +1,17 @@
+#To sort an unsorted list in ascending or descending order
+def selectionSort(arr,size):
+
+    for step in range(size):
+        min =step
+        for i in range(step+1,size):
+            #for printing in descending order change < to > sign in this line
+            if arr[i]<arr[min]:
+               min= i 
+        (arr[step],arr[min])= (arr[min],arr[step])
+
+input = [20,10,15,18,2]
+size = len(input)
+selectionSort(input,size)
+print('Sorted array in ascending order: ')
+print(input)
+        
