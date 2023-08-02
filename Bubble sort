@@ -1,0 +1,13 @@
+#Algorithm compares two adjacent elements and places the bigger one to the right until list is sorted.
+def bubbleSort(arr):
+    #run loop two times 
+    #1. Walking through array 2.the other for comparison
+    for i in range(len(arr)):
+        for j in range(0,len(arr)-i-1):
+            #for descending order swap > to < in this line
+            if arr[j]>arr[j+1]:
+                (arr[j],arr[j+1]) = (arr[j+1],arr[j])
+input=[20,15,8,12,50]
+bubbleSort(input)
+print('Sorted array is in descending order: ')
+print(input)
